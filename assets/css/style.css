@@ -20,6 +20,14 @@ body {
 a {
   text-decoration: none;
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -55,7 +63,7 @@ a {
 .header .body-header {
   display: flex;
   align-items: center;
-  padding: 36px 0 8px; /*8px là khi dùng sticky thì không dính phần tử dưới khi ta lăn chuột xuống, ngoài ra theo chỗ này thì mút Sign Up không dính vào header, lưu ý: có liên quan khoảng cách khối hero*/
+  padding: 36px 0 8px; /*8px là khi dùng sticky thì không dính phần tử dưới khi ta lăn chuột xuống, ngoài ra theo chỗ này thì nút Sign Up không dính vào header, lưu ý: có liên quan khoảng cách khối hero*/
 }
 
 .nav {
@@ -236,4 +244,42 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+/* =================popular============= */
+.popular {
+  padding: 65px 0; /*có padding để nếu thêm nền thì nền không dính sát chữ*/
+  /* background-color: cyan; */
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+.popular-top .control {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.popular-top .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
