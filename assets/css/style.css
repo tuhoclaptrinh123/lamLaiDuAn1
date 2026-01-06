@@ -50,6 +50,19 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
 /* ================header================= */
 .header {
   background: #fffcf4;
@@ -289,9 +302,10 @@ a {
   display: flex;
   gap: 30px;
   margin-top: 55px;
-  background: blue;
+  /* background: blue; */
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dae0;
   background: #fff;
