@@ -371,9 +371,15 @@ a {
   padding: 96px 0;
   background: #2e2100;
 }
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
 .feedback-item {
+  width: 100%;
   display: flex;
   /* justify-content: space-between; */
+  flex-shrink: 0;
 }
 .feedback-item .avatar {
   width: 72px;
