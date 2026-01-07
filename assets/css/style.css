@@ -200,6 +200,7 @@ a {
   font-size: 5.8rem;
   font-weight: 700;
   line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
 }
 .hero .description {
   margin-top: 28px;
@@ -480,6 +481,6 @@ a {
   width: 470px;
   height: 440px;
 }
-.feature-end .content {
+.features-2nd .content {
   width: 49%;
 }
